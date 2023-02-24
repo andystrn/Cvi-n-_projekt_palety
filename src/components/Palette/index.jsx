@@ -5,7 +5,8 @@ import SchemeColor from '../SchemeColor';
 const Palette = ( paletteData ) => {
     const {name, image, attribution, colors, direction, description} = paletteData;
     console.log(image);
-    return <div className="palette">
+    return (
+        <div className="palette">
           <div className={`palette-scheme palette-scheme--${direction}`}>
             <img className="scheme-image" src={image} alt={name} />
             <div className="scheme-colors">
@@ -20,7 +21,8 @@ const Palette = ( paletteData ) => {
 
             <p>Photo by <a href={attribution.url} target="_blank">{attribution.name}</a>.</p>
           </div>
-    </div>
+        </div>
+    );
 }
 
 export default Palette;
