@@ -3,7 +3,7 @@ import './style.css';
 import SchemeColor from '../SchemeColor';
 
 const Palette = ( paletteData ) => {
-    const {name, image, attribution, colors, direction, description} = paletteData;
+    const {name, image, attribution, colors, direction, description} = paletteData.paletteData;
     return (
         <div className="palette">
           <div className={`palette-scheme palette-scheme--${direction}`}>
